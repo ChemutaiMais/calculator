@@ -15,9 +15,9 @@ public class calculator extends javax.swing.JFrame {
      */
    double NumEnter1;
    double NumEnter2;
-    double NumEnter3;
-   double NumEnter4;
-   
+    double Result;
+    String Op;
+
     public calculator() {
         initComponents();
     }
@@ -327,7 +327,7 @@ public class calculator extends javax.swing.JFrame {
 
         DIV.setBackground(new java.awt.Color(204, 0, 204));
         DIV.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        DIV.setText("÷");
+        DIV.setText("/");
         DIV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DIVActionPerformed(evt);
@@ -450,7 +450,10 @@ EnterNumbers("CE");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void DIVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DIVActionPerformed
-      EnterNumbers("÷");   // TODO add your handling code here:
+       NumEnter1 = double.parseDouble(DIV.getText());   
+       DIV.setText();
+       Op ="/";
+// TODO add your handling code here:
     }//GEN-LAST:event_DIVActionPerformed
 
     private void SUBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SUBActionPerformed
