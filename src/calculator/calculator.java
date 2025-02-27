@@ -13,6 +13,11 @@ public class calculator extends javax.swing.JFrame {
     /**
      * Creates new form calculator
      */
+   double NumEnter1;
+   double NumEnter2;
+    double NumEnter3;
+   double NumEnter4;
+   
     public calculator() {
         initComponents();
     }
